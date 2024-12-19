@@ -31,12 +31,18 @@ boxes.forEach((box) => {
   box.addEventListener("click", () => {
     console.log("box was click");
 
+    //impliment X Colorr Orange and O color green Text
+
     if (trun0) {
       box.innerText = "O";
       trun0 = false;
+      box.style.color = "orange";
+
+
     } else {
       box.innerText = "X";
       trun0 = true;
+      box.style.color = "green";
     }
 
     // disabled box again
